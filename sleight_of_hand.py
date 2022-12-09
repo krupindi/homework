@@ -1,7 +1,7 @@
-def sleight_of_hand(*, keys):
+def sleight_of_hand(k):
     points = 0
     counter = [0] * 10
-    for row in range(4):
+    for i in range(4):
         for value in input():
             if value != '.':
                 counter[int(value)] += 1
@@ -12,4 +12,4 @@ def sleight_of_hand(*, keys):
 if __name__ == "__main__":
     keys = int(input())
 
-    print(sleight_of_hand(keys=keys))
+    print(sleight_of_hand(k=keys))
