@@ -19,4 +19,5 @@ def nearest_zero(array):
 
 if __name__ == "__main__":
     street = [int(house) for house in input().split()]
+
     print(*nearest_zero(street))
