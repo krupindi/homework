@@ -7,8 +7,10 @@ def psp(control, n1, n2, prefix):
         if (control > 0 and n2 > 0):
             psp(control - 1, n1, n2 - 1, prefix + ')')
 
-n = int(input())
-control = 0
-n1 = n
-n2 = n
-psp(control, n1, n2, '')
+if __name__ == '__main__':
+
+    n = int(input())
+    control = 0
+    n1 = n
+    n2 = n
+    psp(control, n1, n2, '')
